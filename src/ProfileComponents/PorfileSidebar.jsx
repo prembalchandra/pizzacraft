@@ -13,9 +13,7 @@ import {
   Person,
   ShoppingBag,
   LocationOn,
-  CreditCard,
   HelpOutline,
-  Settings,
   Logout,
 } from "@mui/icons-material";
 

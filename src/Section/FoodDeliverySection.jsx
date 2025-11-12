@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Container, Typography, Button, CardMedia } from "@mui/material";
+import { Box, Typography, Button, CardMedia } from "@mui/material";
 import { Row, Col } from "react-bootstrap";
 import pizzaImg from "../assets/our-story.png";
 

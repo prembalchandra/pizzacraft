@@ -2,11 +2,8 @@ import React from "react";
 import {
   Box,
   Container,
-  Grid,
   Typography,
   Button,
-  Card,
-  CardContent,
 } from "@mui/material";
 import { ArrowForward } from "@mui/icons-material";
 import { Row, Col } from "react-bootstrap";
@@ -23,7 +20,7 @@ const BridgetRileySection = () => {
         fontFamily: "Arial, sans-serif",
       }}
     >
-      <Container>
+      <Box className="scrn-container">
         <Row className="align-items-center">
           <Col lg={7} md={12}>
             <Typography
@@ -107,7 +104,7 @@ const BridgetRileySection = () => {
             />
           </Col>
         </Row>
-      </Container>
+      </Box>
     </Box>
   );
 };

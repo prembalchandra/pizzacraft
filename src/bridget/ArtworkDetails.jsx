@@ -1,8 +1,6 @@
 import React from "react";
 import {
   Box,
-  Container,
-  Grid,
   Typography,
   Card,
   CardContent,
@@ -10,7 +8,6 @@ import {
   MenuItem,
   Select,
 } from "@mui/material";
-import { Row, Col } from "react-bootstrap";
 import Slider from "react-slick";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "slick-carousel/slick/slick.css";

@@ -65,7 +65,7 @@ const restaurants = [
     distance: "4 km",
     time: "30 min",
   },
-   {
+  {
     id: 5,
     name: "Cozy Cuppa Cafe",
     desc: "cheesecake, waffles, Cakes,...",
@@ -76,7 +76,7 @@ const restaurants = [
     time: "30 min",
   },
 
-   {
+  {
     id: 6,
     name: "Cozy Cuppa Cafe",
     desc: "cheesecake, waffles, Cakes,...",
@@ -86,7 +86,7 @@ const restaurants = [
     distance: "4 km",
     time: "30 min",
   },
-   {
+  {
     id: 7,
     name: "The Grill Master’s",
     desc: "Bread, Eggs, Butter, Fries...",
@@ -96,7 +96,7 @@ const restaurants = [
     distance: "5 km",
     time: "40 min",
   },
-    {
+  {
     id: 9,
     name: "Ribeye Junction",
     desc: "Chicken quesadilla, avocado...",
@@ -111,10 +111,13 @@ const restaurants = [
   },
 ];
 const ProductSection = () => {
-    return (
-    <Box  component="section" sx={{
-        padding:"50px 0"
-    }}>
+  return (
+    <Box
+      component="section"
+      sx={{
+        padding: "50px 0",
+      }}
+    >
       <Box className="scrn-container">
         <Typography variant="h4" fontWeight={700} mb={3}>
           Featured Restaurants
@@ -123,7 +126,7 @@ const ProductSection = () => {
         <Row>
           {restaurants.map((res) => (
             <Col xs={12} sm={6} md={3} key={res.id}>
-              <Card
+              {/* <Card
                 sx={{
                   position: "relative",
                   textDecoration: "none",
@@ -147,6 +150,30 @@ const ProductSection = () => {
                     transform: "scale(1.1)",
                   },
                 }}
+              > */}
+              <Card
+                sx={{
+                  position: "relative",
+                  textDecoration: "none",
+                  color: "#000 !important", // ✅ Keep this only once
+                  borderRadius: 2,
+                  marginBottom: "20px",
+                  overflow: "hidden",
+                  padding: "12px",
+                  backgroundColor: "#fff", // ✅ Remove "!important;" (and the semicolon)
+                  border: "1px solid #e8e8e8",
+                  transition: "transform 0.3s, box-shadow 0.3s",
+                  "&:hover": {
+                    transform: "translateY(-6px)",
+                    boxShadow: "0 10px 25px rgba(0,0,0,0.25)",
+                  },
+                  "& .zoom-img": {
+                    transition: "transform 0.6s ease",
+                  },
+                  "&:hover .zoom-img": {
+                    transform: "scale(1.1)",
+                  },
+                }}
               >
                 {res.exclusive && (
                   <Chip
@@ -157,7 +184,7 @@ const ProductSection = () => {
                       position: "absolute",
                       top: 18,
                       right: 18,
-                      zIndex:"1",
+                      zIndex: "1",
                       fontWeight: 600,
                       backgroundColor: "#FF7B00",
                       color: "white",
@@ -209,7 +236,9 @@ const ProductSection = () => {
                   )}
                 </Box>
 
-                <CardContent sx={{ padding:"0 !important", marginTop:"10px" }}>
+                <CardContent
+                  sx={{ padding: "0 !important", marginTop: "10px" }}
+                >
                   <Typography
                     variant="div"
                     sx={{
@@ -245,9 +274,10 @@ const ProductSection = () => {
                   <Typography
                     variant="body2"
                     color="text.secondary"
-                    sx={{ mt: 0.5, 
-                        borderBottom:"1px dashed #e8e8e8",
-                        paddingBottom:"4px"
+                    sx={{
+                      mt: 0.5,
+                      borderBottom: "1px dashed #e8e8e8",
+                      paddingBottom: "4px",
                     }}
                   >
                     {res.desc}

@@ -141,6 +141,25 @@ const CategorySlider = () => {
                       borderRadius: 4,
                       boxShadow: "0 2px 8px rgba(0,0,0,0.05)",
                       textAlign: "center",
+                      padding: "calc(10px + 10 * (100vw - 320px) / 1600) calc(8px + 7 * (100vw - 320px) / 1600)",
+                      backgroundColor: "#f9f9f9",
+                      transition: "all 0.3s ease",
+                      border: "1px solid #00000027",
+                      "&:hover": {
+                        transform: "translateY(-5px) scale(1.1)",
+                        boxShadow: "0 6px 16px rgba(0,0,0,0.1)",
+                        border: "1px solid #3e3ef24d",
+                        backgroundColor: "#3a81ec18",
+                        transition: "0.4s ease"
+                      },
+                    }}
+                  >
+
+                  {/* <Card
+                    sx={{
+                      borderRadius: 4,
+                      boxShadow: "0 2px 8px rgba(0,0,0,0.05)",
+                      textAlign: "center",
                       padding:"calc(10px + 10 * (100vw - 320px) / 1600) calc(8px + 7 * (100vw - 320px) / 1600)",
                       backgroundColor: "##f9f9f9",
                       transition: "all 0.3s ease",
@@ -154,7 +173,7 @@ const CategorySlider = () => {
                             transition:"0.4s ease"
                       },
                     }}
-                  >
+                  > */}
                     <CardMedia
                       component="img"
                       src={cat.img}

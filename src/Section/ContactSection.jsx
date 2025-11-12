@@ -4,7 +4,6 @@ import {
   Typography,
   TextField,
   Button,
-  Grid,
 } from "@mui/material";
 import { Phone, Email, LocationOn, Home } from "@mui/icons-material";
 import { Row, Col } from "react-bootstrap";

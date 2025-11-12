@@ -11,7 +11,7 @@ import {
 } from "@mui/material";
 import { ArrowForward } from "@mui/icons-material";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-import { Container, Row, Col } from "react-bootstrap";
+import {  Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import img12 from "../assets/product-img.jpeg";

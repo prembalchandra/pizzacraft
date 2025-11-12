@@ -7,7 +7,6 @@ import {
   AccordionSummary,
   AccordionDetails,
   Card,
-  CardContent,
   Avatar,
 } from "@mui/material";
 import Slider from "react-slick";
